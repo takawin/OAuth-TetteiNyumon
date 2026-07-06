@@ -1,0 +1,21 @@
+{
+  "name": "minimum-lambda",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AWS Lambda function",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "upload": "bash -c 'set -a && source .env && ./upload.sh'"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.149",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
